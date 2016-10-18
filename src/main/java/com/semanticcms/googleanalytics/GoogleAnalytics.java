@@ -61,7 +61,7 @@ public class GoogleAnalytics implements Component {
 		Page page,
 		ComponentPosition position
 	) throws ServletException, IOException {
-		if(position == ComponentPosition.BODY_END) {
+		if(position == ComponentPosition.HEAD_END) {
 			out.write("<script type=\"text/javascript\">\n"
 				+ "// <![CDATA[\n"
 				+ "(function(i,s,o,g,r,a,m){i[\"GoogleAnalyticsObject\"]=r;i[r]=i[r]||function(){\n"
