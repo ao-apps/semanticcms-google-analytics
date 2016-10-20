@@ -36,7 +36,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * Adds the Google Analytics tracking code script just before head end.
- * This is applied to all views and all pages, even those that are "noindex".
+ * This is applied to all {@link View views} and all {@link Page pages}, even those that are "noindex".
  */
 public class GoogleAnalytics implements Component {
 
