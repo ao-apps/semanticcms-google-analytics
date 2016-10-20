@@ -35,7 +35,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Adds the Google Analytics tracking code script just before body end.
+ * Adds the Google Analytics tracking code script just before head end.
  * This is applied to all views and all pages.
  */
 public class GoogleAnalytics implements Component {
