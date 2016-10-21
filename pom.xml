@@ -27,7 +27,7 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 	<parent>
 		<groupId>com.semanticcms</groupId>
 		<artifactId>semanticcms</artifactId>
-		<version>1.4.2-SNAPSHOT</version>
+		<version>1.5.0</version>
 	</parent>
 
 	<groupId>com.semanticcms</groupId>
@@ -114,17 +114,17 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 		<dependency>
 			<groupId>com.aoindustries</groupId>
 			<artifactId>ao-encoding</artifactId>
-			<version>1.4.2-SNAPSHOT</version>
+			<version>1.5.0</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-model</artifactId>
-			<version>1.7.2-SNAPSHOT</version>
+			<version>1.8.0</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-servlet</artifactId>
-			<version>1.8.2-SNAPSHOT</version>
+			<version>1.9.0</version>
 		</dependency>
 	</dependencies>
 </project>
