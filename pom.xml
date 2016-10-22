@@ -27,7 +27,7 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 	<parent>
 		<groupId>com.semanticcms</groupId>
 		<artifactId>semanticcms</artifactId>
-		<version>1.5.0</version>
+		<version>1.5.1-SNAPSHOT</version>
 	</parent>
 
 	<groupId>com.semanticcms</groupId>
@@ -43,7 +43,7 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 	<scm>
 		<connection>scm:git:git://github.com/aoindustries/semanticcms-google-analytics.git</connection>
 		<developerConnection>scm:git:git@github.com:aoindustries/semanticcms-google-analytics.git</developerConnection>
-		<url>http://github.com/aoindustries/semanticcms-google-analytics</url>
+		<url>https://github.com/aoindustries/semanticcms-google-analytics</url>
 		<tag>HEAD</tag>
 	</scm>
 
@@ -114,17 +114,17 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 		<dependency>
 			<groupId>com.aoindustries</groupId>
 			<artifactId>ao-encoding</artifactId>
-			<version>1.5.0</version>
+			<version>1.5.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-model</artifactId>
-			<version>1.8.0</version>
+			<version>1.8.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId>
 			<artifactId>semanticcms-core-servlet</artifactId>
-			<version>1.9.0</version>
+			<version>1.9.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 </project>
