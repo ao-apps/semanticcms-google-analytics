@@ -7,9 +7,6 @@ Includes the [Google Analytics](https://analytics.google.com/) tracking code in 
 * [Maven Central Repository](https://search.maven.org/#search%7Cgav%7C1%7Cg:%22com.semanticcms%22%20AND%20a:%22semanticcms-google-analytics%22)
 * [GitHub](https://github.com/aoindustries/semanticcms-google-analytics)
 
-## Modules
-* [SemanticCMS Google Analytics Book](https://semanticcms.com/google-analytics/book/)
-
 ## Contact Us
 For questions or support, please [contact us](https://www.aoindustries.com/contact):
 
