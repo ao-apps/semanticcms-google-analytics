@@ -36,13 +36,12 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 	<packaging>jar</packaging>
 
 	<properties>
-		<bookPath>/google-analytics</bookPath>
 		<shortTitle>Google Analytics</shortTitle>
 		<description.html><![CDATA[Includes the <a target="_top" href="https://analytics.google.com/">Google Analytics</a> tracking code in <a target="_top" href="https://semanticcms.com/">SemanticCMS</a> pages.]]></description.html>
 	</properties>
 
 	<name>SemanticCMS Google Analytics</name>
-	<url>https://semanticcms.com${bookPath}/</url><!-- Can't inherit due to multi-module -->
+	<url>https://semanticcms.com/google-analytics/</url>
 	<description>Includes the Google Analytics tracking code in SemanticCMS pages.</description>
 	<inceptionYear>2016</inceptionYear>
 
