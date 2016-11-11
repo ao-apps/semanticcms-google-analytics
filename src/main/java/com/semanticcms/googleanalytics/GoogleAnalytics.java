@@ -41,7 +41,7 @@ import javax.servlet.http.HttpServletResponse;
 public class GoogleAnalytics implements Component {
 
 	/**
-	 * The context init parameter name that contains the tracking ID.
+	 * The context parameter name that contains the tracking ID.
 	 */
 	public static final String TRACKING_ID_INIT_PARAM = GoogleAnalytics.class.getName() + ".trackingId";
 
