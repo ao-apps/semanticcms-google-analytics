@@ -33,7 +33,7 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 
 	<groupId>com.semanticcms</groupId>
 	<artifactId>semanticcms-google-analytics</artifactId>
-	<version>1.0.2</version>
+	<version>1.0.3-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<properties>
@@ -51,7 +51,7 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 		<connection>scm:git:git://github.com/aoindustries/${project.artifactId}.git</connection>
 		<developerConnection>scm:git:git@github.com:aoindustries/${project.artifactId}.git</developerConnection>
 		<url>https://github.com/aoindustries/${project.artifactId}</url>
-		<tag>semanticcms-google-analytics-1.0.2</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<profiles>
