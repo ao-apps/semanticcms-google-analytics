@@ -1,6 +1,6 @@
 /*
  * semanticcms-google-analytics - Includes the Google Analytics tracking code in SemanticCMS pages.
- * Copyright (C) 2016  AO Industries, Inc.
+ * Copyright (C) 2016, 2017  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -22,13 +22,13 @@
  */
 package com.semanticcms.googleanalytics;
 
-import com.semanticcms.core.servlet.SemanticCMS;
+import com.semanticcms.core.renderer.html.HtmlRenderer;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
-@WebListener("Registers the GoogleAnalytics component in SemanticCMS.")
+@WebListener("Registers the GoogleAnalytics component in HtmlRenderer.")
 public class GoogleAnalyticsContextListener implements ServletContextListener {
 
 	@Override
@@ -38,7 +38,7 @@ public class GoogleAnalyticsContextListener implements ServletContextListener {
 		if(trackingId != null) {
 			trackingId = trackingId.trim();
 			if(!trackingId.isEmpty()) {
-				SemanticCMS.getInstance(servletContext).addComponent(new GoogleAnalytics(trackingId));
+				HtmlRenderer.getInstance(servletContext).addComponent(new GoogleAnalytics(trackingId));
 			}
 		}
 	}

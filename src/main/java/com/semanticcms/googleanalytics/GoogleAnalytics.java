@@ -1,6 +1,6 @@
 /*
  * semanticcms-google-analytics - Includes the Google Analytics tracking code in SemanticCMS pages.
- * Copyright (C) 2016  AO Industries, Inc.
+ * Copyright (C) 2016, 2017  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -24,9 +24,9 @@ package com.semanticcms.googleanalytics;
 
 import com.aoindustries.encoding.TextInJavaScriptEncoder;
 import com.semanticcms.core.model.Page;
-import com.semanticcms.core.servlet.Component;
-import com.semanticcms.core.servlet.ComponentPosition;
-import com.semanticcms.core.servlet.View;
+import com.semanticcms.core.renderer.html.Component;
+import com.semanticcms.core.renderer.html.ComponentPosition;
+import com.semanticcms.core.renderer.html.View;
 import java.io.IOException;
 import java.io.Writer;
 import javax.servlet.ServletContext;
