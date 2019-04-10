@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 semanticcms-google-analytics - Includes the Google Analytics tracking code in SemanticCMS pages.
-Copyright (C) 2016, 2017  AO Industries, Inc.
+Copyright (C) 2016, 2017, 2019  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -42,7 +42,7 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 		<documented.artifactId>semanticcms-google-analytics</documented.artifactId>
 		<documented.javaVersion>1.6</documented.javaVersion>
 		<documented.javac.link.javaApi>${javac.link.javaApi.jdk16}</documented.javac.link.javaApi>
-		<documented.name>SemanticCMS Google Analytics</documented.name>
+		<documented.name>SemanticCMS 1 Google Analytics</documented.name>
 		<documented.shortTitle>Google Analytics</documented.shortTitle>
 		<documented.url>https://semanticcms.com/google-analytics/</documented.url>
 		<documented.description>Includes the Google Analytics tracking code in SemanticCMS pages.</documented.description>
