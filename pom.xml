@@ -30,7 +30,7 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 	</parent>
 
 	<groupId>com.semanticcms</groupId><artifactId>semanticcms-google-analytics</artifactId><version>1.0.3-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>bundle</packaging>
 
 	<properties>
 		<shortTitle>Google Analytics</shortTitle>
