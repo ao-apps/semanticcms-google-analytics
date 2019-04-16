@@ -61,9 +61,9 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 							<links>
 								<link>${javac.link.javaApi}</link>
 								<link>${javac.link.javaeeApi.6}</link>
-								<link>https://aoindustries.com/ao-encoding/apidocs</link>
-								<link>https://semanticcms.com/core/model/apidocs</link>
-								<link>https://semanticcms.com/core/servlet/apidocs</link>
+								<link>https://aoindustries.com/ao-encoding/apidocs/</link>
+								<link>https://semanticcms.com/core/model/apidocs/</link>
+								<link>https://semanticcms.com/core/servlet/apidocs/</link>
 							</links>
 						</configuration>
 					</plugin>
