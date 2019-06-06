@@ -37,7 +37,7 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 		<description.html><![CDATA[Includes the <a target="_top" href="https://analytics.google.com/">Google Analytics</a> tracking code in <a target="_top" href="https://semanticcms.com/">SemanticCMS</a> pages.]]></description.html>
 	</properties>
 
-	<name>SemanticCMS 2 Google Analytics</name>
+	<name>SemanticCMS Google Analytics²</name>
 	<url>https://semanticcms.com/google-analytics/</url>
 	<description>Includes the Google Analytics tracking code in SemanticCMS pages.</description>
 	<inceptionYear>2016</inceptionYear>
@@ -60,7 +60,9 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 						<configuration>
 							<links>
 								<link>${javac.link.javaApi}</link>
+								<!-- Java EE -->
 								<link>${javac.link.javaeeApi.6}</link>
+								<!-- Direct -->
 								<link>https://aoindustries.com/ao-encoding/apidocs/</link>
 								<link>https://semanticcms.com/core/model/apidocs/</link>
 								<link>https://semanticcms.com/core/renderer/html/apidocs/</link>
@@ -72,19 +74,56 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 		</profile>
 	</profiles>
 
+	<dependencyManagement>
+		<dependencies>
+			<!-- Java EE -->
+			<dependency>
+				<groupId>javax.servlet</groupId><artifactId>javax.servlet-api</artifactId><version>3.0.1</version>
+				<scope>provided</scope>
+			</dependency>
+			<!-- Direct -->
+			<dependency>
+				<groupId>com.aoindustries</groupId><artifactId>ao-encoding</artifactId><version>1.7.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.aoindustries</groupId><artifactId>ao-encoding</artifactId><version>1.7.1-SNAPSHOT</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId><version>2.0.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId><version>2.0.0-SNAPSHOT</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-html</artifactId><version>2.0.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-html</artifactId><version>2.0.0-SNAPSHOT</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
 	<dependencies>
+		<!-- Java EE -->
 		<dependency>
-			<groupId>javax.servlet</groupId><artifactId>javax.servlet-api</artifactId><version>3.0.1</version>
+			<groupId>javax.servlet</groupId><artifactId>javax.servlet-api</artifactId>
 			<scope>provided</scope>
 		</dependency>
+		<!-- Direct -->
 		<dependency>
-			<groupId>com.aoindustries</groupId><artifactId>ao-encoding</artifactId><version>1.7.0-validation-SNAPSHOT</version>
+			<groupId>com.aoindustries</groupId><artifactId>ao-encoding</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId><version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-html</artifactId><version>2.0.0-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer-html</artifactId>
 		</dependency>
 	</dependencies>
 </project>
