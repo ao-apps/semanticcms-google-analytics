@@ -39,5 +39,4 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 		datePublished="2016-10-19T15:29:00-0500"
 		dateModified="${ao:getLastModified('index.html')}"
 	/>
-	<!-- TODO: Pick-up javadocs version, not pom version, in title, here and elsewhere -->
 </jsp:root>
