@@ -25,7 +25,7 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>com.semanticcms</groupId><artifactId>semanticcms-parent</artifactId><version>1.2.0<!-- -validation-SNAPSHOT --></version>
+		<groupId>com.semanticcms</groupId><artifactId>semanticcms-parent</artifactId><version>1.2.0-validation-SNAPSHOT</version>
 		<relativePath>../parent/pom.xml</relativePath>
 	</parent>
 
@@ -78,19 +78,19 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 		<dependencies>
 			<!-- Java EE -->
 			<dependency>
-				<groupId>com.aoindustries</groupId><artifactId>javaee-web-api-bom</artifactId><version>6.0.0<!-- -validation-SNAPSHOT --></version>
+				<groupId>com.aoindustries</groupId><artifactId>javaee-web-api-bom</artifactId><version>6.0.0-validation-SNAPSHOT</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
 			<!-- Direct -->
 			<dependency>
-				<groupId>com.aoindustries</groupId><artifactId>ao-encoding</artifactId><version>1.7.1<!-- -validation-SNAPSHOT --></version>
+				<groupId>com.aoindustries</groupId><artifactId>ao-encoding</artifactId><version>1.7.1-validation-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId><version>1.9.1<!-- -validation-SNAPSHOT --></version>
+				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId><version>1.9.1-validation-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet</artifactId><version>1.13.0<!-- -validation-SNAPSHOT --></version>
+				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet</artifactId><version>1.13.0-validation-SNAPSHOT</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
