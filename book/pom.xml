@@ -29,7 +29,7 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 		<relativePath>../../parent/pom.xml</relativePath>
 	</parent>
 
-	<groupId>com.semanticcms</groupId><artifactId>semanticcms-google-analytics-book</artifactId><version>1.0.3</version>
+	<groupId>com.semanticcms</groupId><artifactId>semanticcms-google-analytics-book</artifactId><version>1.0.3-validation-SNAPSHOT</version>
 	<packaging>bundle</packaging>
 
 	<properties>
@@ -57,7 +57,7 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 		<connection>scm:git:git://github.com/aoindustries/${documented.artifactId}.git</connection>
 		<developerConnection>scm:git:git@github.com:aoindustries/${documented.artifactId}.git</developerConnection>
 		<url>${documented.scm.url}</url>
-		<tag>semanticcms-google-analytics-book-1.0.3</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<dependencyManagement>
