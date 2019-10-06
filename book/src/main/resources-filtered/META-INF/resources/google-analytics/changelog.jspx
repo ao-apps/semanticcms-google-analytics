@@ -60,7 +60,7 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 						encoder.
 					</li>
 					<li>
-						Changed implementation to <ao:a href="https://support.google.com/analytics/answer/1008080?hl=en&ref_topic=1008079#GA">Global Site Tag (gtag.js)</ao:a>,
+						Changed implementation to <ao:a href="https://support.google.com/analytics/answer/1008080?hl=en&amp;ref_topic=1008079#GA">Global Site Tag (gtag.js)</ao:a>,
 						which operates in async mode.  We have also included <code>dns-prefetch</code> and <code>preconnect</code> on "https://www.google-analytics.com".
 					</li>
 				</ul>
