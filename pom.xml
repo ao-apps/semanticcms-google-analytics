@@ -29,7 +29,7 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 		<relativePath>../parent/pom.xml</relativePath>
 	</parent>
 
-	<groupId>com.semanticcms</groupId><artifactId>semanticcms-google-analytics</artifactId><version>1.0.3-POST-SNAPSHOT</version>
+	<groupId>com.semanticcms</groupId><artifactId>semanticcms-google-analytics</artifactId><version>1.1.0-SNAPSHOT</version>
 	<packaging>bundle</packaging>
 
 	<properties>
@@ -64,6 +64,7 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 								<link>${javac.link.javaeeApi.6}</link>
 								<!-- Direct -->
 								<link>https://aoindustries.com/ao-encoding/apidocs/</link>
+								<link>https://aoindustries.com/ao-net-types/apidocs/</link>
 								<link>https://semanticcms.com/core/model/apidocs/</link>
 								<link>https://semanticcms.com/core/servlet/apidocs/</link>
 							</links>
@@ -87,6 +88,9 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 				<groupId>com.aoindustries</groupId><artifactId>ao-encoding</artifactId><version>2.0.0-POST-SNAPSHOT</version>
 			</dependency>
 			<dependency>
+				<groupId>com.aoindustries</groupId><artifactId>ao-net-types</artifactId><version>1.2.0-POST-SNAPSHOT</version>
+			</dependency>
+			<dependency>
 				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId><version>1.10.0-POST-SNAPSHOT</version>
 			</dependency>
 			<dependency>
@@ -104,6 +108,9 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 		<!-- Direct -->
 		<dependency>
 			<groupId>com.aoindustries</groupId><artifactId>ao-encoding</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.aoindustries</groupId><artifactId>ao-net-types</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId>
