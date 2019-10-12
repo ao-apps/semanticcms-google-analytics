@@ -36,7 +36,7 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-10-31T00:09:01-0500"
-		dateModified="2019-10-06T11:54:25-0500"
+		dateModified="2019-10-12T03:07:23-0500"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms-google-analytics:pom.version}" />
@@ -51,20 +51,29 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 				groupId="@{documented.groupId}"
 				artifactId="@{documented.artifactId}"
 				scmUrl="@{documented.scm.url}"
-			>
-				<ul>
-					<li>
-						This JavaScript is embedded in the XHTML page, using
-						<ao:a href="https://aoindustries.com/ao-encoding/apidocs/com/aoindustries/encoding/JavaScriptInXhtmlEncoder.html#javaScriptInXhtmlEncoder">JavaScriptInXhtmlEncoder.javaScriptInXhtmlEncoder</ao:a>
-						encoder.
-					</li>
-					<li>
-						Changed implementation to <ao:a href="https://support.google.com/analytics/answer/1008080?hl=en&amp;ref_topic=1008079#GA">Global Site Tag (gtag.js)</ao:a>,
-						which operates in async mode.  We have also included <code>dns-prefetch</code> and <code>preconnect</code> on "https://www.google-analytics.com".
-					</li>
-				</ul>
-			</changelog:release>
+			/>
 		</c:if>
+
+		<changelog:release
+			projectName="@{documented.name}"
+			version="1.1.0"
+			datePublished="2019-10-12T03:07:23-0500"
+			groupId="@{documented.groupId}"
+			artifactId="@{documented.artifactId}"
+			scmUrl="@{documented.scm.url}"
+		>
+			<ul>
+				<li>
+					This JavaScript is embedded in the XHTML page, using
+					<ao:a href="https://aoindustries.com/ao-encoding/apidocs/com/aoindustries/encoding/JavaScriptInXhtmlEncoder.html#javaScriptInXhtmlEncoder">JavaScriptInXhtmlEncoder.javaScriptInXhtmlEncoder</ao:a>
+					encoder.
+				</li>
+				<li>
+					Changed implementation to <ao:a href="https://support.google.com/analytics/answer/1008080?hl=en&amp;ref_topic=1008079#GA">Global Site Tag (gtag.js)</ao:a>,
+					which operates in async mode.  We have also included <code>dns-prefetch</code> and <code>preconnect</code> on "https://www.google-analytics.com".
+				</li>
+			</ul>
+		</changelog:release>
 
 		<changelog:release
 			projectName="@{documented.name}"
