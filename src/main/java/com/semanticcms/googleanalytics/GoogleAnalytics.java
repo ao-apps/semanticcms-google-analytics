@@ -37,10 +37,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * For {@link Doctype#HTML5}, adds the Google Analytics <a href="https://support.google.com/analytics/answer/1008080?hl=en&ref_topic=1008079#GA">Global Site Tag</a>
- * at {@link ComponentPosition#HEAD_START}.
- * For {@linkplain Doctype other doctypes}, adds a more traditional Google Analytics script
- * at {@link ComponentPosition#HEAD_END}.
+ * For {@link Doctype#HTML5}, adds the modern Google Analytics <a href="https://support.google.com/analytics/answer/1008080?hl=en&ref_topic=1008079#GA">Global Site Tag</a>.
+ * For {@linkplain Doctype other doctypes}, adds an older-style Google Analytics <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs">analytics.js tracking script</a>.
+ * Both are added at {@link ComponentPosition#HEAD_START}.
  * This is applied to all {@link View views} and all {@link Page pages}, even those that are "noindex".
  *
  * @see com.aoindustries.html.util.GoogleAnalytics#writeGlobalSiteTag(com.aoindustries.html.Html, java.lang.String)
@@ -69,13 +68,11 @@ public class GoogleAnalytics implements Component {
 		Page page,
 		ComponentPosition position
 	) throws ServletException, IOException {
-		Html html = HtmlEE.get(servletContext, request, out);
-		if(html.doctype == Doctype.HTML5) {
-			if(position == ComponentPosition.HEAD_START) {
+		if(position == ComponentPosition.HEAD_START) {
+			Html html = HtmlEE.get(servletContext, request, out);
+			if(html.doctype == Doctype.HTML5) {
 				com.aoindustries.html.util.GoogleAnalytics.writeGlobalSiteTag(html, trackingId);
-			}
-		} else {
-			if(position == ComponentPosition.HEAD_END) {
+			} else {
 				com.aoindustries.html.util.GoogleAnalytics.writeAnalyticsJs(html, trackingId);
 			}
 		}
