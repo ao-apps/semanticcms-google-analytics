@@ -1,6 +1,6 @@
 /*
  * semanticcms-google-analytics - Includes the Google Analytics tracking code in SemanticCMS pages.
- * Copyright (C) 2016, 2017, 2019  AO Industries, Inc.
+ * Copyright (C) 2016, 2017, 2019, 2020  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -22,7 +22,7 @@
  */
 package com.semanticcms.googleanalytics;
 
-import com.aoindustries.html.Doctype;
+import com.aoindustries.encoding.Doctype;
 import com.aoindustries.html.Html;
 import com.aoindustries.html.servlet.HtmlEE;
 import com.semanticcms.core.model.Page;
