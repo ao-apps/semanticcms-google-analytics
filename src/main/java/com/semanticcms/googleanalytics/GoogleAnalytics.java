@@ -24,13 +24,11 @@ package com.semanticcms.googleanalytics;
 
 import com.aoindustries.encoding.Doctype;
 import com.aoindustries.html.Html;
-import com.aoindustries.html.servlet.HtmlEE;
 import com.semanticcms.core.model.Page;
 import com.semanticcms.core.servlet.Component;
 import com.semanticcms.core.servlet.ComponentPosition;
 import com.semanticcms.core.servlet.View;
 import java.io.IOException;
-import java.io.Writer;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -63,13 +61,12 @@ public class GoogleAnalytics implements Component {
 		ServletContext servletContext,
 		HttpServletRequest request,
 		HttpServletResponse response,
-		Writer out,
+		Html html,
 		View view,
 		Page page,
 		ComponentPosition position
 	) throws ServletException, IOException {
 		if(position == ComponentPosition.HEAD_START) {
-			Html html = HtmlEE.get(servletContext, request, out);
 			if(html.doctype == Doctype.HTML5) {
 				com.aoindustries.html.util.GoogleAnalytics.writeGlobalSiteTag(html, trackingId);
 			} else {
