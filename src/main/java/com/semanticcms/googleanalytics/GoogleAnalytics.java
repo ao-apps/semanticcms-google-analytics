@@ -24,13 +24,18 @@ package com.semanticcms.googleanalytics;
 
 import com.aoindustries.encoding.Doctype;
 import com.aoindustries.html.Html;
+import com.aoindustries.util.StringUtility;
 import com.semanticcms.core.model.Page;
 import com.semanticcms.core.servlet.Component;
 import com.semanticcms.core.servlet.ComponentPosition;
+import com.semanticcms.core.servlet.SemanticCMS;
 import com.semanticcms.core.servlet.View;
 import java.io.IOException;
 import javax.servlet.ServletContext;
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebListener;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -50,9 +55,25 @@ public class GoogleAnalytics implements Component {
 	 */
 	public static final String TRACKING_ID_INIT_PARAM = GoogleAnalytics.class.getName() + ".trackingId";
 
+	@WebListener("Registers the GoogleAnalytics component in SemanticCMS.")
+	public static class Initializer implements ServletContextListener {
+		@Override
+		public void contextInitialized(ServletContextEvent event) {
+			ServletContext servletContext = event.getServletContext();
+			String trackingId = StringUtility.trimNullIfEmpty(servletContext.getInitParameter(TRACKING_ID_INIT_PARAM));
+			if(trackingId != null) {
+				SemanticCMS.getInstance(servletContext).addComponent(new GoogleAnalytics(trackingId));
+			}
+		}
+		@Override
+		public void contextDestroyed(ServletContextEvent event) {
+			// Do nothing
+		}
+	}
+
 	private final String trackingId;
 
-	public GoogleAnalytics(String trackingId) {
+	private GoogleAnalytics(String trackingId) {
 		this.trackingId = trackingId;
 	}
 

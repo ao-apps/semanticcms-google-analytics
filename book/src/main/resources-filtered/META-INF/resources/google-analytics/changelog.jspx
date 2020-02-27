@@ -37,7 +37,7 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-10-31T00:09:01-0500"
-		dateModified="2020-02-14T01:49:53-0600"
+		dateModified="2020-02-26T20:09:57-0600"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms-google-analytics:pom.version}" />
@@ -60,6 +60,7 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 						Now outputting HTML or XHTML based on the current response content type.
 						This should eliminate validator warnings when used as HTML.
 					</li>
+					<li>Optimized ServletContext attribute initialization and concurrency.</li>
 				</ul>
 			</changelog:release>
 		</c:if>
