@@ -37,7 +37,7 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-10-31T00:09:01-0500"
-		dateModified="2020-02-26T20:09:57-0600"
+		dateModified="2020-03-07T06:01:29-0600"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms-google-analytics:pom.version}" />
@@ -49,12 +49,16 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 			<changelog:release
 				projectName="@{documented.name}"
 				version="#{version}"
-				groupId="@{documented.groupId}"
+				groupId="@{project.groupId}"
 				artifactId="@{documented.artifactId}"
-				scmUrl="@{documented.scm.url}"
+				scmUrl="@{project.scm.url}"
 			>
 				<ul>
 					<li>Minimum Java version changed from 1.7 to 1.8.</li>
+					<li>
+						Reduced use of property substitutions in <code>pom.xml</code>.
+						This is to help 3rd-party parsers that fail to perform full Maven-compatible substitutions.
+					</li>
 					<li>Using <ao:a href="https://aoindustries.com/ao-fluent-html/">AO Fluent HTML</ao:a> for HTML generation.</li>
 					<li>
 						Now outputting HTML or XHTML based on the current response content type.
@@ -69,9 +73,9 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 			projectName="@{documented.name}"
 			version="1.1.0"
 			datePublished="2019-10-12T03:07:23-0500"
-			groupId="@{documented.groupId}"
+			groupId="@{project.groupId}"
 			artifactId="@{documented.artifactId}"
-			scmUrl="@{documented.scm.url}"
+			scmUrl="@{project.scm.url}"
 		>
 			<ul>
 				<li>
@@ -90,9 +94,9 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 			projectName="@{documented.name}"
 			version="1.0.3"
 			datePublished="2019-06-23T01:26:24-0500"
-			groupId="@{documented.groupId}"
+			groupId="@{project.groupId}"
 			artifactId="@{documented.artifactId}"
-			scmUrl="@{documented.scm.url}"
+			scmUrl="@{project.scm.url}"
 		>
 			<ul>
 				<li>Minimum Java version changed from 1.6 to 1.7.</li>
@@ -109,9 +113,9 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 			projectName="@{documented.name}"
 			version="1.0.2"
 			datePublished="2017-07-20T13:26:40-0500"
-			groupId="@{documented.groupId}"
+			groupId="@{project.groupId}"
 			artifactId="@{documented.artifactId}"
-			scmUrl="@{documented.scm.url}"
+			scmUrl="@{project.scm.url}"
 		>
 			<ul>
 				<li>New release for bug fixes in underlying <ao:a href="https://aoindustries.com/ao-encoding/">AO Encoding</ao:a> library.</li>
@@ -123,9 +127,9 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 			projectName="@{documented.name}"
 			version="1.0.1"
 			datePublished="2016-11-16T04:41:32-0600"
-			groupId="@{documented.groupId}"
+			groupId="@{project.groupId}"
 			artifactId="@{documented.artifactId}"
-			scmUrl="@{documented.scm.url}"
+			scmUrl="@{project.scm.url}"
 		>
 			<ul>
 				<li>New <ao:a href="https://aoindustries.com/ao-oss-parent/">AO OSS Parent</ao:a> POM to simplify <code>pom.xml</code> files.</li>
@@ -138,9 +142,9 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 			projectName="@{documented.name}"
 			version="1.0.0"
 			datePublished="2016-10-20T19:29:00-0500"
-			groupId="@{documented.groupId}"
+			groupId="@{project.groupId}"
 			artifactId="@{documented.artifactId}"
-			scmUrl="@{documented.scm.url}"
+			scmUrl="@{project.scm.url}"
 		>
 			<ul>
 				<li>Added Google Analytics to SemanticCMS pages.</li>
