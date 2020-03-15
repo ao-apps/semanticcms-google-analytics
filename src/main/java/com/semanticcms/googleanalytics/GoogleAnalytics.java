@@ -24,7 +24,7 @@ package com.semanticcms.googleanalytics;
 
 import com.aoindustries.encoding.Doctype;
 import com.aoindustries.html.Html;
-import com.aoindustries.util.StringUtility;
+import com.aoindustries.lang.Strings;
 import com.semanticcms.core.model.Page;
 import com.semanticcms.core.renderer.html.Component;
 import com.semanticcms.core.renderer.html.ComponentPosition;
@@ -60,7 +60,7 @@ public class GoogleAnalytics implements Component {
 		@Override
 		public void contextInitialized(ServletContextEvent event) {
 			ServletContext servletContext = event.getServletContext();
-			String trackingId = StringUtility.trimNullIfEmpty(servletContext.getInitParameter(GoogleAnalytics.TRACKING_ID_INIT_PARAM));
+			String trackingId = Strings.trimNullIfEmpty(servletContext.getInitParameter(GoogleAnalytics.TRACKING_ID_INIT_PARAM));
 			if(trackingId != null) {
 				HtmlRenderer.getInstance(servletContext).addComponent(new GoogleAnalytics(trackingId));
 			}
