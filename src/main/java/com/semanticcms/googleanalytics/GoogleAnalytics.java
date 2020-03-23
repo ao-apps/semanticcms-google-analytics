@@ -40,7 +40,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * For {@link Doctype#HTML5}, adds the modern Google Analytics <a href="https://support.google.com/analytics/answer/1008080?hl=en&ref_topic=1008079#GA">Global Site Tag</a>.
+ * For {@link Doctype#HTML5}, adds the modern Google Analytics <a href="https://support.google.com/analytics/answer/1008080?hl=en&amp;ref_topic=1008079#GA">Global Site Tag</a>.
  * For {@linkplain Doctype other doctypes}, adds an older-style Google Analytics <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs">analytics.js tracking script</a>.
  * Both are added at {@link ComponentPosition#HEAD_START}.
  * This is applied to all {@link View views} and all {@link Page pages}, even those that are "noindex".
