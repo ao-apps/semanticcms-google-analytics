@@ -43,7 +43,6 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 	<inceptionYear>2016</inceptionYear>
 
 	<scm>
-		<!-- Can't inherit due to multi-module -->
 		<connection>scm:git:git://github.com/aoindustries/semanticcms-google-analytics.git</connection>
 		<developerConnection>scm:git:git@github.com:aoindustries/semanticcms-google-analytics.git</developerConnection>
 		<url>https://github.com/aoindustries/semanticcms-google-analytics</url>
