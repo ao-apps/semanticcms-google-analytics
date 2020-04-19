@@ -25,7 +25,7 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>com.semanticcms</groupId><artifactId>semanticcms-parent</artifactId><version>1.6.1-POST-SNAPSHOT</version>
+		<groupId>com.semanticcms</groupId><artifactId>semanticcms-parent</artifactId><version>1.7.0-SNAPSHOT</version>
 		<relativePath>../parent/pom.xml</relativePath>
 	</parent>
 
@@ -34,7 +34,7 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 
 	<properties>
 		<shortTitle>Google Analytics</shortTitle>
-		<description.html><![CDATA[Includes the <a target="_top" href="https://analytics.google.com/">Google Analytics</a> tracking code in <a target="_top" href="https://semanticcms.com/">SemanticCMS</a> pages.]]></description.html>
+		<description.html><![CDATA[Includes the <a target="${javadoc.target}" href="https://analytics.google.com/">Google Analytics</a> tracking code in <a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a> pages.]]></description.html>
 	</properties>
 
 	<name>SemanticCMS Google Analytics</name>
