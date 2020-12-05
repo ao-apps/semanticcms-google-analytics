@@ -42,6 +42,29 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 	<description>Includes the Google Analytics tracking code in SemanticCMS pages.</description>
 	<inceptionYear>2016</inceptionYear>
 
+	<licenses>
+		<license>
+			<name>GNU General Lesser Public License (LGPL) version 3.0</name>
+			<url>https://www.gnu.org/licenses/lgpl-3.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<organization>
+		<name>AO Industries, Inc.</name>
+		<url>https://aoindustries.com/</url>
+	</organization>
+
+	<developers>
+		<developer>
+			<name>AO Industries, Inc.</name>
+			<email>support@aoindustries.com</email>
+			<url>https://aoindustries.com/</url>
+			<organization>AO Industries, Inc.</organization>
+			<organizationUrl>https://aoindustries.com/</organizationUrl>
+		</developer>
+	</developers>
+
 	<scm>
 		<connection>scm:git:git://github.com/aoindustries/semanticcms-google-analytics.git</connection>
 		<developerConnection>scm:git:git@github.com:aoindustries/semanticcms-google-analytics.git</developerConnection>
