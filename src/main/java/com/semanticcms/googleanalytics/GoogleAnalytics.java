@@ -1,6 +1,6 @@
 /*
  * semanticcms-google-analytics - Includes the Google Analytics tracking code in SemanticCMS pages.
- * Copyright (C) 2016, 2017, 2019, 2020  AO Industries, Inc.
+ * Copyright (C) 2016, 2017, 2019, 2020, 2021  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -23,7 +23,7 @@
 package com.semanticcms.googleanalytics;
 
 import com.aoindustries.encoding.Doctype;
-import com.aoindustries.html.Html;
+import com.aoindustries.html.Document;
 import com.aoindustries.lang.Strings;
 import com.semanticcms.core.model.Page;
 import com.semanticcms.core.servlet.Component;
@@ -45,8 +45,8 @@ import javax.servlet.http.HttpServletResponse;
  * Both are added at {@link ComponentPosition#HEAD_START}.
  * This is applied to all {@link View views} and all {@link Page pages}, even those that are "noindex".
  *
- * @see com.aoindustries.html.util.GoogleAnalytics#writeGlobalSiteTag(com.aoindustries.html.Html, java.lang.String)
- * @see com.aoindustries.html.util.GoogleAnalytics#writeAnalyticsJs(com.aoindustries.html.Html, java.lang.String)
+ * @see com.aoindustries.html.util.GoogleAnalytics#writeGlobalSiteTag(com.aoindustries.html.Document, java.lang.String)
+ * @see com.aoindustries.html.util.GoogleAnalytics#writeAnalyticsJs(com.aoindustries.html.Document, java.lang.String)
  */
 public class GoogleAnalytics implements Component {
 
@@ -82,16 +82,16 @@ public class GoogleAnalytics implements Component {
 		ServletContext servletContext,
 		HttpServletRequest request,
 		HttpServletResponse response,
-		Html html,
+		Document document,
 		View view,
 		Page page,
 		ComponentPosition position
 	) throws ServletException, IOException {
 		if(position == ComponentPosition.HEAD_START) {
-			if(html.doctype == Doctype.HTML5) {
-				com.aoindustries.html.util.GoogleAnalytics.writeGlobalSiteTag(html, trackingId);
+			if(document.doctype == Doctype.HTML5) {
+				com.aoindustries.html.util.GoogleAnalytics.writeGlobalSiteTag(document, trackingId);
 			} else {
-				com.aoindustries.html.util.GoogleAnalytics.writeAnalyticsJs(html, trackingId);
+				com.aoindustries.html.util.GoogleAnalytics.writeAnalyticsJs(document, trackingId);
 			}
 		}
 	}
