@@ -23,7 +23,7 @@
 package com.semanticcms.googleanalytics;
 
 import com.aoindustries.encoding.Doctype;
-import com.aoindustries.html.Document;
+import com.aoindustries.html.servlet.DocumentEE;
 import com.aoindustries.lang.Strings;
 import com.semanticcms.core.model.Page;
 import com.semanticcms.core.renderer.html.Component;
@@ -45,8 +45,8 @@ import javax.servlet.http.HttpServletResponse;
  * Both are added at {@link ComponentPosition#HEAD_START}.
  * This is applied to all {@link View views} and all {@link Page pages}, even those that are "noindex".
  *
- * @see com.aoindustries.html.util.GoogleAnalytics#writeGlobalSiteTag(com.aoindustries.html.Document, java.lang.String)
- * @see com.aoindustries.html.util.GoogleAnalytics#writeAnalyticsJs(com.aoindustries.html.Document, java.lang.String)
+ * @see com.aoindustries.html.util.GoogleAnalytics#writeGlobalSiteTag(com.aoindustries.html.AnyDocument, java.lang.String)
+ * @see com.aoindustries.html.util.GoogleAnalytics#writeAnalyticsJs(com.aoindustries.html.AnyDocument, java.lang.String)
  */
 public class GoogleAnalytics implements Component {
 
@@ -82,7 +82,7 @@ public class GoogleAnalytics implements Component {
 		ServletContext servletContext,
 		HttpServletRequest request,
 		HttpServletResponse response,
-		Document document,
+		DocumentEE document,
 		View view,
 		Page page,
 		ComponentPosition position
