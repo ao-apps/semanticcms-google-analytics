@@ -45,8 +45,8 @@ import javax.servlet.http.HttpServletResponse;
  * Both are added at {@link ComponentPosition#HEAD_START}.
  * This is applied to all {@link View views} and all {@link Page pages}, even those that are "noindex".
  *
- * @see com.aoindustries.html.util.GoogleAnalytics#writeGlobalSiteTag(com.aoindustries.html.AnyDocument, java.lang.String)
- * @see com.aoindustries.html.util.GoogleAnalytics#writeAnalyticsJs(com.aoindustries.html.AnyDocument, java.lang.String)
+ * @see com.aoindustries.html.util.GoogleAnalytics#writeGlobalSiteTag(com.aoindustries.html.any.AnyDocument, java.lang.String)
+ * @see com.aoindustries.html.util.GoogleAnalytics#writeAnalyticsJs(com.aoindustries.html.any.AnyDocument, java.lang.String)
  */
 public class GoogleAnalytics implements Component {
 
