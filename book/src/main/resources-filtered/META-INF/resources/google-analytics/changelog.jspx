@@ -37,7 +37,7 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-10-31T00:09:01-05:00"
-		dateModified="2021-05-31T08:58:51-05:00"
+		dateModified="2021-06-03T22:53:21-05:00"
 	>
 		<c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
 			<changelog:release
@@ -103,7 +103,7 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 			<ul>
 				<li>
 					This JavaScript is embedded in the XHTML page, using
-					<ao:a href="https://oss.aoapps.com/encoding/apidocs/com/aoindustries/encoding/JavaScriptInXhtmlEncoder.html#javaScriptInXhtmlEncoder">JavaScriptInXhtmlEncoder.javaScriptInXhtmlEncoder</ao:a>
+					<ao:a href="https://oss.aoapps.com/encoding/apidocs/com/aoapps/encoding/JavaScriptInXhtmlEncoder.html#javaScriptInXhtmlEncoder">JavaScriptInXhtmlEncoder.javaScriptInXhtmlEncoder</ao:a>
 					encoder.
 				</li>
 				<li>

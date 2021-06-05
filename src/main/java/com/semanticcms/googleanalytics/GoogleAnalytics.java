@@ -22,9 +22,9 @@
  */
 package com.semanticcms.googleanalytics;
 
-import com.aoindustries.encoding.Doctype;
-import com.aoindustries.html.servlet.DocumentEE;
-import com.aoindustries.lang.Strings;
+import com.aoapps.encoding.Doctype;
+import com.aoapps.html.servlet.DocumentEE;
+import com.aoapps.lang.Strings;
 import com.semanticcms.core.model.Page;
 import com.semanticcms.core.renderer.html.Component;
 import com.semanticcms.core.renderer.html.ComponentPosition;
@@ -45,8 +45,8 @@ import javax.servlet.http.HttpServletResponse;
  * Both are added at {@link ComponentPosition#HEAD_START}.
  * This is applied to all {@link View views} and all {@link Page pages}, even those that are "noindex".
  *
- * @see com.aoindustries.html.util.GoogleAnalytics#writeGlobalSiteTag(com.aoindustries.html.any.AnyUnion_Metadata_Phrasing, java.lang.String)
- * @see com.aoindustries.html.util.GoogleAnalytics#writeAnalyticsJs(com.aoindustries.html.any.AnyScriptSupportingContent, java.lang.String)
+ * @see com.aoapps.html.util.GoogleAnalytics#writeGlobalSiteTag(com.aoapps.html.any.AnyUnion_Metadata_Phrasing, java.lang.String)
+ * @see com.aoapps.html.util.GoogleAnalytics#writeAnalyticsJs(com.aoapps.html.any.AnyScriptSupportingContent, java.lang.String)
  */
 public class GoogleAnalytics implements Component {
 
@@ -89,9 +89,9 @@ public class GoogleAnalytics implements Component {
 	) throws ServletException, IOException {
 		if(position == ComponentPosition.HEAD_START) {
 			if(document.doctype == Doctype.HTML5) {
-				com.aoindustries.html.util.GoogleAnalytics.writeGlobalSiteTag(document, trackingId);
+				com.aoapps.html.util.GoogleAnalytics.writeGlobalSiteTag(document, trackingId);
 			} else {
-				com.aoindustries.html.util.GoogleAnalytics.writeAnalyticsJs(document, trackingId);
+				com.aoapps.html.util.GoogleAnalytics.writeAnalyticsJs(document, trackingId);
 			}
 		}
 	}
