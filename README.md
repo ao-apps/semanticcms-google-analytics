@@ -8,6 +8,8 @@
 [![semantic versioning: 2.0.0](https://semanticcms.com/ao-badges/semver-2.0.0.svg)](http://semver.org/spec/v2.0.0.html)
 [![license: LGPL v3](https://semanticcms.com/ao-badges/license-lgpl-3.0.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 
+[![Build](https://github.com/aoindustries/semanticcms-google-analytics/workflows/Build/badge.svg?branch=1.x)](https://github.com/aoindustries/semanticcms-google-analytics/actions?query=workflow%3ABuild)
+
 Includes the [Google Analytics](https://analytics.google.com/) tracking code in [SemanticCMS](https://github.com/aoindustries/semanticcms) pages.
 
 ## Project Links
