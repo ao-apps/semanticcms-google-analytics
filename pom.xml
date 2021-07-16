@@ -37,7 +37,7 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 		<javadoc.breadcrumbs><![CDATA[<a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a>
 / <a target="${javadoc.target}" href="${project.url}">Google Analytics</a>]]></javadoc.breadcrumbs>
 		<description.html><![CDATA[Includes the <a target="${javadoc.target}" href="https://analytics.google.com/">Google Analytics</a> tracking code in <a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a> pages.]]></description.html>
-		<!-- SonarCloud.io -->
+		<!-- SonarQube -->
 		<sonar.projectKey>${project.groupId}:${project.artifactId}</sonar.projectKey>
 		<sonar.organization>aoindustries</sonar.organization>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
