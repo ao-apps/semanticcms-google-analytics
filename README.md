@@ -9,6 +9,7 @@
 [![license: LGPL v3](https://semanticcms.com/ao-badges/license-lgpl-3.0.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 
 [![Build](https://github.com/aoindustries/semanticcms-google-analytics/workflows/Build/badge.svg?branch=1.x)](https://github.com/aoindustries/semanticcms-google-analytics/actions?query=workflow%3ABuild)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.semanticcms/semanticcms-google-analytics/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.semanticcms/semanticcms-google-analytics)
 
 Includes the [Google Analytics](https://analytics.google.com/) tracking code in [SemanticCMS](https://github.com/aoindustries/semanticcms) pages.
 
