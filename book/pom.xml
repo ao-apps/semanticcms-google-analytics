@@ -71,20 +71,20 @@ along with semanticcms-google-analytics.  If not, see <http://www.gnu.org/licens
 	</developers>
 
 	<scm>
-		<connection>scm:git:git://github.com/aoindustries/semanticcms-google-analytics.git</connection>
-		<developerConnection>scm:git:git@github.com:aoindustries/semanticcms-google-analytics.git</developerConnection>
-		<url>https://github.com/aoindustries/semanticcms-google-analytics</url>
+		<connection>scm:git:git://github.com/ao-apps/semanticcms-google-analytics.git</connection>
+		<developerConnection>scm:git:git@github.com:ao-apps/semanticcms-google-analytics.git</developerConnection>
+		<url>https://github.com/ao-apps/semanticcms-google-analytics</url>
 		<tag>HEAD</tag>
 	</scm>
 
 	<issueManagement>
 		<system>GitHub Issues</system>
-		<url>https://github.com/aoindustries/semanticcms-google-analytics/issues</url>
+		<url>https://github.com/ao-apps/semanticcms-google-analytics/issues</url>
 	</issueManagement>
 
 	<ciManagement>
 		<system>GitHub Actions</system>
-		<url>https://github.com/aoindustries/semanticcms-google-analytics/actions</url>
+		<url>https://github.com/ao-apps/semanticcms-google-analytics/actions</url>
 	</ciManagement>
 
 	<repositories>
