@@ -1,6 +1,6 @@
 /*
  * semanticcms-google-analytics - Includes the Google Analytics tracking code in SemanticCMS pages.
- * Copyright (C) 2016, 2017, 2019, 2020, 2021  AO Industries, Inc.
+ * Copyright (C) 2016, 2017, 2019, 2020, 2021, 2022  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -88,7 +88,7 @@ public class GoogleAnalytics implements Component {
 		ComponentPosition position
 	) throws ServletException, IOException {
 		if(position == ComponentPosition.HEAD_START) {
-			if(document.doctype == Doctype.HTML5) {
+			if(document.encodingContext.getDoctype() == Doctype.HTML5) {
 				com.aoapps.html.util.GoogleAnalytics.writeGlobalSiteTag(document, trackingId);
 			} else {
 				com.aoapps.html.util.GoogleAnalytics.writeAnalyticsJs(document, trackingId);
