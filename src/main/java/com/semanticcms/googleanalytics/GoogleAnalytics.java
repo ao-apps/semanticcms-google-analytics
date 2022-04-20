@@ -51,49 +51,49 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class GoogleAnalytics implements Component {
 
-	/**
-	 * The context parameter name that contains the tracking ID.
-	 */
-	public static final String TRACKING_ID_INIT_PARAM = GoogleAnalytics.class.getName() + ".trackingId";
+  /**
+   * The context parameter name that contains the tracking ID.
+   */
+  public static final String TRACKING_ID_INIT_PARAM = GoogleAnalytics.class.getName() + ".trackingId";
 
-	@WebListener("Registers the GoogleAnalytics component in HtmlRenderer.")
-	public static class Initializer implements ServletContextListener {
-		@Override
-		public void contextInitialized(ServletContextEvent event) {
-			ServletContext servletContext = event.getServletContext();
-			String trackingId = Strings.trimNullIfEmpty(servletContext.getInitParameter(GoogleAnalytics.TRACKING_ID_INIT_PARAM));
-			if(trackingId != null) {
-				HtmlRenderer.getInstance(servletContext).addComponent(new GoogleAnalytics(trackingId));
-			}
-		}
-		@Override
-		public void contextDestroyed(ServletContextEvent event) {
-			// Do nothing
-		}
-	}
+  @WebListener("Registers the GoogleAnalytics component in HtmlRenderer.")
+  public static class Initializer implements ServletContextListener {
+    @Override
+    public void contextInitialized(ServletContextEvent event) {
+      ServletContext servletContext = event.getServletContext();
+      String trackingId = Strings.trimNullIfEmpty(servletContext.getInitParameter(GoogleAnalytics.TRACKING_ID_INIT_PARAM));
+      if (trackingId != null) {
+        HtmlRenderer.getInstance(servletContext).addComponent(new GoogleAnalytics(trackingId));
+      }
+    }
+    @Override
+    public void contextDestroyed(ServletContextEvent event) {
+      // Do nothing
+    }
+  }
 
-	private final String trackingId;
+  private final String trackingId;
 
-	private GoogleAnalytics(String trackingId) {
-		this.trackingId = trackingId;
-	}
+  private GoogleAnalytics(String trackingId) {
+    this.trackingId = trackingId;
+  }
 
-	@Override
-	public void doComponent(
-		ServletContext servletContext,
-		HttpServletRequest request,
-		HttpServletResponse response,
-		DocumentEE document,
-		View view,
-		Page page,
-		ComponentPosition position
-	) throws ServletException, IOException {
-		if(position == ComponentPosition.HEAD_START) {
-			if(document.encodingContext.getDoctype() == Doctype.HTML5) {
-				com.aoapps.html.util.GoogleAnalytics.writeGlobalSiteTag(document, trackingId);
-			} else {
-				com.aoapps.html.util.GoogleAnalytics.writeAnalyticsJs(document, trackingId);
-			}
-		}
-	}
+  @Override
+  public void doComponent(
+    ServletContext servletContext,
+    HttpServletRequest request,
+    HttpServletResponse response,
+    DocumentEE document,
+    View view,
+    Page page,
+    ComponentPosition position
+  ) throws ServletException, IOException {
+    if (position == ComponentPosition.HEAD_START) {
+      if (document.encodingContext.getDoctype() == Doctype.HTML5) {
+        com.aoapps.html.util.GoogleAnalytics.writeGlobalSiteTag(document, trackingId);
+      } else {
+        com.aoapps.html.util.GoogleAnalytics.writeAnalyticsJs(document, trackingId);
+      }
+    }
+  }
 }
