@@ -66,6 +66,7 @@ public class GoogleAnalytics implements Component {
         SemanticCMS.getInstance(servletContext).addComponent(new GoogleAnalytics(trackingId));
       }
     }
+
     @Override
     public void contextDestroyed(ServletContextEvent event) {
       // Do nothing
@@ -80,13 +81,13 @@ public class GoogleAnalytics implements Component {
 
   @Override
   public void doComponent(
-    ServletContext servletContext,
-    HttpServletRequest request,
-    HttpServletResponse response,
-    DocumentEE document,
-    View view,
-    Page page,
-    ComponentPosition position
+      ServletContext servletContext,
+      HttpServletRequest request,
+      HttpServletResponse response,
+      DocumentEE document,
+      View view,
+      Page page,
+      ComponentPosition position
   ) throws ServletException, IOException {
     if (position == ComponentPosition.HEAD_START) {
       if (document.encodingContext.getDoctype() == Doctype.HTML5) {
