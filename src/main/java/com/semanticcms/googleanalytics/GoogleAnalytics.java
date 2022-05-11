@@ -56,6 +56,9 @@ public class GoogleAnalytics implements Component {
    */
   public static final String TRACKING_ID_INIT_PARAM = GoogleAnalytics.class.getName() + ".trackingId";
 
+  /**
+   * Registers the {@link GoogleAnalytics} component in {@link HtmlRenderer}.
+   */
   @WebListener("Registers the GoogleAnalytics component in HtmlRenderer.")
   public static class Initializer implements ServletContextListener {
     @Override
