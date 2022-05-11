@@ -56,6 +56,9 @@ public class GoogleAnalytics implements Component {
    */
   public static final String TRACKING_ID_INIT_PARAM = GoogleAnalytics.class.getName() + ".trackingId";
 
+  /**
+   * Registers the {@link GoogleAnalytics} component in {@link SemanticCMS}.
+   */
   @WebListener("Registers the GoogleAnalytics component in SemanticCMS.")
   public static class Initializer implements ServletContextListener {
     @Override
