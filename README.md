@@ -23,7 +23,7 @@ Includes the [Google Analytics](https://analytics.google.com/) tracking code in 
 * [Project Home](https://semanticcms.com/google-analytics/)
 * [Changelog](https://semanticcms.com/google-analytics/changelog)
 * [API Docs](https://semanticcms.com/google-analytics/apidocs/)
-* [Maven Central Repository](https://central.sonatype.com/search?namespace=com.semanticcms&q=a%3Asemanticcms-google-analytics)
+* [Maven Central Repository](https://central.sonatype.com/artifact/com.semanticcms/semanticcms-google-analytics)
 * [GitHub](https://github.com/ao-apps/semanticcms-google-analytics)
 
 ## Contact Us
