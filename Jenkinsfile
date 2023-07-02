@@ -29,6 +29,7 @@ def upstreamProjects = [
 
   // Direct
   '../oss/encoding', // <groupId>com.aoapps</groupId><artifactId>ao-encoding</artifactId>
+  '../oss/fluent-html-any', // <groupId>com.aoapps</groupId><artifactId>ao-fluent-html-any</artifactId>
   '../oss/fluent-html-servlet', // <groupId>com.aoapps</groupId><artifactId>ao-fluent-html-servlet</artifactId>
   '../oss/fluent-html-util', // <groupId>com.aoapps</groupId><artifactId>ao-fluent-html-util</artifactId>
   '../oss/lang', // <groupId>com.aoapps</groupId><artifactId>ao-lang</artifactId>
