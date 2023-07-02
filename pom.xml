@@ -127,6 +127,11 @@ along with semanticcms-google-analytics.  If not, see <https://www.gnu.org/licen
                       <outputDirectory>${project.build.directory}/offlineLinks/com.aoapps/ao-encoding</outputDirectory>
                     </artifactItem>
                     <artifactItem>
+                      <groupId>com.aoapps</groupId><artifactId>ao-fluent-html-any</artifactId><classifier>javadoc</classifier>
+                      <includes>element-list, package-list</includes>
+                      <outputDirectory>${project.build.directory}/offlineLinks/com.aoapps/ao-fluent-html-any</outputDirectory>
+                    </artifactItem>
+                    <artifactItem>
                       <groupId>com.aoapps</groupId><artifactId>ao-fluent-html-servlet</artifactId><classifier>javadoc</classifier>
                       <includes>element-list, package-list</includes>
                       <outputDirectory>${project.build.directory}/offlineLinks/com.aoapps/ao-fluent-html-servlet</outputDirectory>
@@ -165,6 +170,10 @@ along with semanticcms-google-analytics.  If not, see <https://www.gnu.org/licen
                 <offlineLink>
                   <url>https://oss.aoapps.com/encoding/apidocs/</url>
                   <location>${project.build.directory}/offlineLinks/com.aoapps/ao-encoding</location>
+                </offlineLink>
+                <offlineLink>
+                  <url>https://oss.aoapps.com/fluent-html/any/apidocs/</url>
+                  <location>${project.build.directory}/offlineLinks/com.aoapps/ao-fluent-html-any</location>
                 </offlineLink>
                 <offlineLink>
                   <url>https://oss.aoapps.com/fluent-html/servlet/apidocs/</url>
@@ -241,6 +250,9 @@ along with semanticcms-google-analytics.  If not, see <https://www.gnu.org/licen
         <groupId>com.aoapps</groupId><artifactId>ao-encoding</artifactId><version>7.0.0${POST-SNAPSHOT}</version>
       </dependency>
       <dependency>
+        <groupId>com.aoapps</groupId><artifactId>ao-fluent-html-any</artifactId><version>0.7.0${POST-SNAPSHOT}</version>
+      </dependency>
+      <dependency>
         <groupId>com.aoapps</groupId><artifactId>ao-fluent-html-servlet</artifactId><version>0.7.0${POST-SNAPSHOT}</version>
       </dependency>
       <dependency>
@@ -268,9 +280,6 @@ along with semanticcms-google-analytics.  If not, see <https://www.gnu.org/licen
       </dependency>
       <dependency>
         <groupId>com.aoapps</groupId><artifactId>ao-encoding-taglib</artifactId><version>4.0.0${POST-SNAPSHOT}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.aoapps</groupId><artifactId>ao-fluent-html-any</artifactId><version>0.7.0${POST-SNAPSHOT}</version>
       </dependency>
       <dependency>
         <groupId>com.aoapps</groupId><artifactId>ao-hodgepodge</artifactId><version>5.1.2${POST-SNAPSHOT}</version>
@@ -350,6 +359,9 @@ along with semanticcms-google-analytics.  If not, see <https://www.gnu.org/licen
     <!-- Direct -->
     <dependency>
       <groupId>com.aoapps</groupId><artifactId>ao-encoding</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.aoapps</groupId><artifactId>ao-fluent-html-any</artifactId>
     </dependency>
     <dependency>
       <groupId>com.aoapps</groupId><artifactId>ao-fluent-html-servlet</artifactId>
