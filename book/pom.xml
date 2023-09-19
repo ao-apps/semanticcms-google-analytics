@@ -41,6 +41,8 @@ along with semanticcms-google-analytics.  If not, see <https://www.gnu.org/licen
     <documented.artifactId>semanticcms-google-analytics</documented.artifactId>
     <documented.name>SemanticCMS Google Analytics</documented.name>
     <documented.description>Includes the Google Analytics tracking code in SemanticCMS pages.</documented.description>
+    <javadoc.breadcrumbs><![CDATA[<a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a>
+/ <a target="${javadoc.target}" href="${project.url}">Google Analytics</a>]]></javadoc.breadcrumbs>
 
     <description.html><![CDATA[Documentation for <a target="${javadoc.target}" href="${project.url}">${documented.name}</a> in <a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a> format.]]></description.html>
     <!-- SonarQube -->
