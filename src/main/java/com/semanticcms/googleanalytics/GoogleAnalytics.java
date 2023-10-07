@@ -1,6 +1,6 @@
 /*
  * semanticcms-google-analytics - Includes the Google Analytics tracking code in SemanticCMS pages.
- * Copyright (C) 2016, 2017, 2019, 2020, 2021, 2022  AO Industries, Inc.
+ * Copyright (C) 2016, 2017, 2019, 2020, 2021, 2022, 2023  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -23,7 +23,6 @@
 
 package com.semanticcms.googleanalytics;
 
-import com.aoapps.encoding.Doctype;
 import com.aoapps.html.servlet.DocumentEE;
 import com.aoapps.lang.Strings;
 import com.semanticcms.core.model.Page;
@@ -41,13 +40,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * For {@link Doctype#HTML5}, adds the modern Google Analytics <a href="https://support.google.com/analytics/answer/1008080?hl=en&amp;ref_topic=1008079#GA">Global Site Tag</a>.
- * For {@linkplain Doctype other doctypes}, adds an older-style Google Analytics <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs">analytics.js tracking script</a>.
+ * For {@link com.aoapps.encoding.Doctype#HTML5}, adds the modern Google Analytics <a href="https://support.google.com/analytics/answer/1008080?hl=en&amp;ref_topic=1008079#GA">Global Site Tag</a>.
+ * For {@linkplain com.aoapps.encoding.Doctype other doctypes}, adds an older-style Google Analytics <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs">analytics.js tracking script</a>.
  * Both are added at {@link ComponentPosition#HEAD_START}.
  * This is applied to all {@link View views} and all {@link Page pages}, even those that are "noindex".
  *
- * @see com.aoapps.html.util.GoogleAnalytics#writeGlobalSiteTag(com.aoapps.html.any.AnyUnion_Metadata_Phrasing, java.lang.String)
- * @see com.aoapps.html.util.GoogleAnalytics#writeAnalyticsJs(com.aoapps.html.any.AnyScriptSupportingContent, java.lang.String)
+ * @see com.aoapps.html.util.GoogleAnalytics#writeScriptByDoctype(com.aoapps.html.any.AnyUnion_Metadata_Phrasing, java.lang.String)
  */
 public class GoogleAnalytics implements Component {
 
@@ -93,11 +91,7 @@ public class GoogleAnalytics implements Component {
       ComponentPosition position
   ) throws ServletException, IOException {
     if (position == ComponentPosition.HEAD_START) {
-      if (document.encodingContext.getDoctype() == Doctype.HTML5) {
-        com.aoapps.html.util.GoogleAnalytics.writeGlobalSiteTag(document, trackingId);
-      } else {
-        com.aoapps.html.util.GoogleAnalytics.writeAnalyticsJs(document, trackingId);
-      }
+      com.aoapps.html.util.GoogleAnalytics.writeScriptByDoctype(document, trackingId);
     }
   }
 }
