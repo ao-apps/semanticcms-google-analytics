@@ -115,6 +115,10 @@ along with semanticcms-google-analytics.  If not, see <https://www.gnu.org/licen
       <plugin>
         <groupId>org.apache.maven.plugins</groupId><artifactId>maven-dependency-plugin</artifactId>
         <configuration>
+          <usedDependencies>
+            <!-- Javadoc-only -->
+            <dependency>com.aoapps:ao-encoding</dependency>
+          </usedDependencies>
           <ignoredDependencies>
             <!-- No "module-info.java" in some release builds -->
             <dependency>com.aoapps:ao-collections</dependency>
