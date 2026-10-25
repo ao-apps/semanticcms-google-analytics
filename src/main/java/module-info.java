@@ -21,7 +21,6 @@
  * along with semanticcms-google-analytics.  If not, see <https://www.gnu.org/licenses/>.
  */
 module com.semanticcms.googleanalytics {
-  exports com.semanticcms.googleanalytics;
   // Direct
   requires com.aoapps.encoding; // <groupId>com.aoapps</groupId><artifactId>ao-encoding</artifactId>
   requires com.aoapps.html.any; // <groupId>com.aoapps</groupId><artifactId>ao-fluent-html-any</artifactId>
@@ -31,4 +30,6 @@ module com.semanticcms.googleanalytics {
   requires jakarta.servlet; // <groupId>jakarta.servlet</groupId><artifactId>jakarta.servlet-api</artifactId>
   requires com.semanticcms.core.model; // <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId>
   requires com.semanticcms.core.servlet; // <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-servlet</artifactId>
+
+  exports com.semanticcms.googleanalytics;
 }
